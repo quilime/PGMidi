@@ -11,6 +11,9 @@
     #import <CoreMIDI/MIDINetworkSession.h>
 #endif
 
+// disable NSLog. Uncomment to enable logging.
+#define NSLog(...)
+
 /// A helper that NSLogs an error message if "c" is an error code
 #define NSLogError(c,str) do{if (c) NSLog(@"Error (%@): %ld:%@", str, (long)c,[NSError errorWithDomain:NSMachErrorDomain code:c userInfo:nil]);}while(false)
 
