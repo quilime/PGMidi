@@ -11,7 +11,7 @@
     #import <CoreMIDI/MIDINetworkSession.h>
 #endif
 
-// disable NSLog. Uncomment to enable logging.
+// disable NSLog. Remove to enable logging.
 #define NSLog(...)
 
 /// A helper that NSLogs an error message if "c" is an error code
